@@ -12,28 +12,28 @@
   <fieldset>
     <legend>My Info</legend>
     <label for="first_name_field">First name:</label>
-    <input type="text" id="first_name_field" name="first_name_field" value="">
+    <input type="text" id="first_name_field" name="first_name_field" value=""><br>
     <label for="last_name_field">Last name:</label>
-    <input type="text" id="last_name_field" name="last_name_field" value="">
-    <label for="phone_field">Phone number:</label>
-    <input type="text" id="phone_field" name="phone_field" value="">
+    <input type="text" id="last_name_field" name="last_name_field" value=""><br>
+    <label for="phone_field">Phone:</label>
+    <input type="text" id="phone_field" name="phone_field" value=""><br>
     <label for="email_field">Email:</label>
-    <input type="text" id="email_field" name="email_field" value="">
+    <input type="text" id="email_field" name="email_field" value=""><br>
    
-   < -- Radio buttons for gender selection -- >   
-    <input type="radio" id="gender_field" name="gender" value="">
-    <label for="gender_field">Female</label>
+    
     <input type="radio" id="gender_field" name="gender" value="">
     <label for="gender_field">Male</label>
+    <input type="radio" id="gender_field" name="gender" value="">
+    <label for="gender_field">Female</label><br>
     
 
-     < -- Dropdown menu for age selection -- >
+     
     <label for=" age_field">Age:</label>
     <select id=" age_field" name=" age_field">
       <option value="Under 18">Under 18</option>
       <option value="Above 18">Above 18</option>
     </select>
-    <input type="submit" value="Submit Query”">
+   
   </fieldset>
 </form>
 
@@ -56,10 +56,10 @@
         <input type="checkbox" id="available_field[] " name="Sunday" value="">
         <label for="available_field[] "> Sunday</label>
         <h3><strong>Comments</strong></h3>
-        <textarea name="comments_field" rows="5" cols="15"></textarea>
+        <textarea name="comments_field" rows="5" cols="40"></textarea>
     </fieldset>
 </form>
-
+ <input type="submit" value="Submit”">
 
 
 
@@ -67,10 +67,10 @@
 
 
 <form>
-  <label for="first_name_field">First name:</label>
+  <label for="hidden_field">First name:</label>
   <input type="text" id="first_name_field" name="first_name_field" value=""><br><br>
-  <input type="hidden" id="custId" name="custId" value="3487">
-  <input type="submit" value="Submit">
+  <input type="hidden" id="hidden_field" name="hidden_field" value="3487">
+
 </form>
 </body>
 </html>
