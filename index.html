@@ -6,28 +6,71 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Grouping Form Data with Fieldset</h2>
 
-<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
 
 <form action="/ http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
   <fieldset>
     <legend>My Info</legend>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" value="">
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname" value="">
-    <label for="phone">Phone number:</label>
-    <input type="text" id="phone" name="phone" value="">
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value="">
-    <input type="radio" id="Female" name="gender" value="Female">
-    <label for="Female">Female</label>
-    <input type="radio" id="Male" name="gender" value="Male">
-    <label for="Male">Male</label>
-    <input type="submit" value="Submit">
+    <label for="first_name_field">First name:</label>
+    <input type="text" id="first_name_field" name="first_name_field" value="fname">
+    <label for="last_name_field">Last name:</label>
+    <input type="text" id="last_name_field" name="last_name_field" value="lname">
+    <label for="phone_field">Phone number:</label>
+    <input type="text" id="phone_field" name="phone_field" value="phone">
+    <label for="email_field">Email:</label>
+    <input type="text" id="email_field" name="email_field" value="email">
+   
+   < -- Radio buttons for gender selection -- >   
+    <input type="radio" id="gender_field" name="gender" value="">
+    <label for="gender_field">Female</label>
+    <input type="radio" id="gender_field" name="gender" value="">
+    <label for="gender_field">Male</label>
+    
+
+     < -- Dropdown menu for age selection -- >
+    <label for=" age_field">Age:</label>
+    <select id=" age_field" name=" age_field">
+      <option value="Under 18">Under 18</option>
+      <option value="Above 18">Above 18</option>
+    </select>
+    <input type="submit" value="Submit Query”">
   </fieldset>
 </form>
 
+<form action="/ http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+    <fieldset>
+        <legend>My Availability</legend>
+        <h2><strong>Days Available:</strong></h2>
+        <input type="checkbox" id="available_field[] " name="Monday" value="">
+        <label for="available_field[] "> Monday</label><br>
+        <input type="checkbox" id="available_field[] " name="Tuesday" value="">
+        <label for="available_field[] "> Tuesday</label><br>
+        <input type="checkbox" id="available_field[] " name="Wednesday" value="">
+        <label for="available_field[] "> Wednesday</label><br>
+        <input type="checkbox" id="available_field[] " name="Thursday" value="">
+        <label for="available_field[] "> Thursday</label><br>
+        <input type="checkbox" id="available_field[] " name="Friday" value="">
+        <label for="available_field[] "> Friday</label><br>
+        <input type="checkbox" id="available_field[] " name="Saturday" value="">
+        <label for="available_field[] "> Saturday</label><br>
+        <input type="checkbox" id="available_field[] " name="Sunday" value="">
+        <label for="available_field[] "> Sunday</label>
+        <h3><strong>Comments</strong></h3>
+        <textarea name="comments_field" rows="5" cols="15"></textarea>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+<form>
+  <label for="first_name_field">First name:</label>
+  <input type="text" id="first_name_field" name="first_name_field" value=""><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
